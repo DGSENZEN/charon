@@ -1,18 +1,14 @@
 defmodule Charon do
   @moduledoc """
   Documentation for `Charon`.
+  
   """
+  use GenStage
 
   @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> Charon.hello()
-      :world
-
+    This fetches the starting "state" of the Pipeline
   """
-  def hello do
-    :world
-  end
+    def start_link() do
+      :world
+    end
 end
